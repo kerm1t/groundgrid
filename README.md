@@ -29,6 +29,14 @@ This repository contains the source code for the article "GroundGrid: LiDAR Poin
 # Build
 ```
 catkin build -DCMAKE_BUILD_TYPE=Release groundgrid
+
+OR
+
+cd ~/catkin_ws/src
+git clone https://github.com/kerm1t/groundgrid.git
+cd ..
+catkin_make
+source ~/catkin_ws/devel/setup.bash
 ```
 
 # Launch
