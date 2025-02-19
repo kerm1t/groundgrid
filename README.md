@@ -42,6 +42,11 @@ catkin_make
 ## Playback
 ```
 source ~/catkin_ws/devel/setup.bash
+roslaunch groundgrid Groundgrid.launch 
+```
+
+```
+source ~/catkin_ws/devel/setup.bash
 roslaunch groundgrid KITTIPlayback.launch directory:=/path/to/the/SemanticKITTI/dataset sequence:=0
 ```
 
