@@ -36,12 +36,12 @@ cd ~/catkin_ws/src
 git clone https://github.com/kerm1t/groundgrid.git
 cd ..
 catkin_make
-source ~/catkin_ws/devel/setup.bash
 ```
 
 # Launch
 ## Playback
 ```
+source ~/catkin_ws/devel/setup.bash
 roslaunch groundgrid KITTIPlayback.launch directory:=/path/to/the/SemanticKITTI/dataset sequence:=0
 ```
 
