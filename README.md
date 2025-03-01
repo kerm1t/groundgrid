@@ -28,12 +28,13 @@ This repository contains the source code for the article "GroundGrid: LiDAR Poin
 
 # Build
 ```
+cd ~/catkin_ws/src
+git clone https://github.com/kerm1t/groundgrid.git
+
 catkin build -DCMAKE_BUILD_TYPE=Release groundgrid
 
 OR
 
-cd ~/catkin_ws/src
-git clone https://github.com/kerm1t/groundgrid.git
 cd ..
 catkin_make
 ```
@@ -42,7 +43,9 @@ catkin_make
 ## Playback
 ```
 source ~/catkin_ws/devel/setup.bash
-roslaunch groundgrid Groundgrid.launch 
+roslaunch groundgrid GroundGrid.launch
+or
+roslaunch groundgrid GroundGrid.launch point_cloud_topic:=/velodyne_points 
 ```
 
 ```
